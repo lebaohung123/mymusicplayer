@@ -11,7 +11,7 @@ const NewMusic = () => {
   return (
     <div className="new-music home">
       <div className="align-items-center d-flex">
-        <h3 className="new-music-heading">Mới Phát Hành</h3>
+        <h3 className="new-music-heading">New Release</h3>
         <div className="new-music-play-icon d-flex align-items-center">
           <BsFillPlayFill />
         </div>

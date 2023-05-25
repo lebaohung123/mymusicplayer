@@ -9,7 +9,7 @@ const Song = () => {
   if (favoriteSong.length == 0) {
     return (
       <div className="mymusic-song">
-        <h2>Thư viện trống</h2>
+        <h2>Library Empty</h2>
       </div>
     );
   }

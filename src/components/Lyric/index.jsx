@@ -77,32 +77,32 @@ const Lyric = ({
                 className={`btn ${isPlayListTab ? "active" : ""}`}
                 onClick={() => setIsPlayListTab(true)}
               >
-                Danh sách phát
+                Playlists
               </button>
               <button
                 className={`btn ${isPlayListTab ? "" : "active"}`}
                 onClick={() => setIsPlayListTab(false)}
               >
-                Lời bài hát
+                Lyrics
               </button>
             </div>
 
             <div className="lyric-button-group d-flex align-items-center">
               {isFullScreen ? (
-                <Tooltip title="Thoát toàn màn hình" placement="bottom">
+                <Tooltip title="Exit full screen" placement="bottom">
                   <div className="icon-button" onClick={handleChangeFullScreen}>
                     <MdCloseFullscreen />
                   </div>
                 </Tooltip>
               ) : (
-                <Tooltip title="Toàn màn hình" placement="bottom">
+                <Tooltip title="Full screen" placement="bottom">
                   <div className="icon-button" onClick={handleChangeFullScreen}>
                     <MdCloseFullscreen />
                   </div>
                 </Tooltip>
               )}
 
-              <Tooltip title="Cài đặt" placement="bottom">
+              <Tooltip title="Setting" placement="bottom">
                 <div className="icon-button">
                   <AiOutlineSetting />
                 </div>
@@ -111,7 +111,7 @@ const Lyric = ({
               {isFullScreen ? (
                 ""
               ) : (
-                <Tooltip title="Đóng" placement="bottom">
+                <Tooltip title="Close" placement="bottom">
                   <div
                     className="icon-button"
                     onClick={() => setIsShowLyric(false)}

@@ -21,7 +21,7 @@ const Layout = () => {
   const [suggestList, setSuggestList] = useState([]);
   const [searchKeyword, setSearchKeyword] = useState("");
 
-  document.title = "Zing Mp3 | Nghe nhạc chất";
+  document.title = "MyMusic | Listen to quality music";
 
   useEffect(() => {
     fetch("/songs")

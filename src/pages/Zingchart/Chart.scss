@@ -1,10 +1,10 @@
-.zing-chart {
-  .zing-chart-heading {
+.chart {
+  .chart-heading {
     font-size: 40px;
   }
 }
 
-.zing-chart-play-icon {
+.chart-play-icon {
   display: flex;
   align-items: center;
 
@@ -18,7 +18,7 @@
   }
 }
 
-.zing-chart-playlist {
+.chart-playlist {
   margin: 32px 0;
   .playlist-item {
     border-bottom: 1px solid #ffffff0d;
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 768px) {
-  .zing-chart-playlist {
+  .chart-playlist {
     .playlist-item {
       .playlist-position {
         min-width: 54px;

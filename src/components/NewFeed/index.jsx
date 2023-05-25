@@ -1,7 +1,6 @@
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { BsDot } from "react-icons/bs";
-
 import "./NewFeed.scss";
 import { useState } from "react";
 
@@ -26,9 +25,9 @@ function NewFeed({ feed }) {
             </div>
             <span className="follow-btn" onClick={() => setIsFollow(!isFollow)}>
               {isFollow ? (
-                <span style={{ color: "#dadada" }}>Đã quan tâm</span>
+                <span style={{ color: "#dadada" }}>Interested</span>
               ) : (
-                "Quan tâm"
+                "Interested"
               )}
             </span>
           </div>

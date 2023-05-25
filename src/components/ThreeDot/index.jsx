@@ -141,7 +141,7 @@ const ThreeDot = ({ song }) => {
   });
 
   return (
-    <Tooltip title="Xem thêm" placement="top">
+    <Tooltip title="See more" placement="top">
       <div className="icon-button threedot" onClick={showSongDetail}>
         <BsThreeDots />
         <ThreeDotDetail song={song} />

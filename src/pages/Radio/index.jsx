@@ -154,7 +154,7 @@ const Radio = () => {
       </div>
 
       <div className="card-list-group">
-        <h3 className="h3-heading">Chương Trình Mới</h3>
+        <h3 className="h3-heading">New program</h3>
         <Grid container spacing={3}>
           {newRadio.map((list) => (
             <Grid item xs={6} sm={3} key={list.id}>

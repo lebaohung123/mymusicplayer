@@ -157,7 +157,7 @@ const PlayerControl = ({ showPlaylist, setShowPlayList }) => {
       />
 
       <div className="song-subcontrol" onClick={stopPropagation}>
-        <Tooltip title="Xem lời bài hát" placement="top">
+        <Tooltip title="View lyrics" placement="top">
           <div className="song-mic icon-button" onClick={handleShowLyric}>
             <GiMicrophone />
           </div>

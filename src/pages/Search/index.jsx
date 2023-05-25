@@ -11,7 +11,7 @@ const Search = () => {
     return (
       <div className="search home">
         <h2 className="h2-heading">
-          Không có kết quả được tìm kiếm "{searchKeyword}"
+        No results were searched "{searchKeyword}"
         </h2>
       </div>
     );
@@ -19,11 +19,11 @@ const Search = () => {
 
   return (
     <div className="search home">
-      <h2 className="h2-heading">Kết quả tìm kiếm "{searchKeyword}"</h2>
-      <h3 className="search-title">Top kết quả</h3>
+      <h2 className="h2-heading">Search Results "{searchKeyword}"</h2>
+      <h3 className="search-title">Top results</h3>
       <SongItem key={searchResult.id} song={searchResult} />
 
-      <h3 className="search-title">Tất cả kết quả</h3>
+      <h3 className="search-title">All results</h3>
       {suggestList.map((song) => (
         <SongItem key={song.id} song={song} />
       ))}

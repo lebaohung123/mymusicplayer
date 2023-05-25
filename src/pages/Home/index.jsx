@@ -152,17 +152,17 @@ const Home = () => {
       </Swiper>
 
       <div className="home-category d-flex align-items-center">
-        <NavLink to="/newmusic" className="navigation-item" title="Nhạc mới">
+        <NavLink to="/newmusic" className="navigation-item" title="New Music">
           <div className="navigation-item-icon">
             <FiMusic />
           </div>
-          <div className="navigation-item-title">Nhạc mới</div>
+          <div className="navigation-item-title">New Music</div>
         </NavLink>
-        <NavLink to="/category" className="navigation-item" title="Thể loại">
+        <NavLink to="/category" className="navigation-item" title="Category">
           <div className="navigation-item-icon">
             <BiCategoryAlt />
           </div>
-          <div className="navigation-item-title">Thể loại</div>
+          <div className="navigation-item-title">Category</div>
         </NavLink>
         <NavLink to="/topmusic" className="navigation-item" title="Top 100">
           <div className="navigation-item-icon">
@@ -170,16 +170,10 @@ const Home = () => {
           </div>
           <div className="navigation-item-title">Top 100</div>
         </NavLink>
-        <NavLink to="/mv" className="navigation-item" title="MV">
-          <div className="navigation-item-icon">
-            <MdOndemandVideo />
-          </div>
-          <div className="navigation-item-title">MV</div>
-        </NavLink>
       </div>
 
       <div className="card-list-group">
-        <h3 className="h3-heading">Có thể bạn muốn nghe</h3>
+        <h3 className="h3-heading">Maybe you want to hear</h3>
         <Grid container spacing={3}>
           {listSong.map((list) => (
             <Grid item xs={6} sm={3} key={list.id}>
@@ -200,7 +194,7 @@ const Home = () => {
       </div>
 
       <div className="card-list-group">
-        <h3 className="h3-heading">Nhạc mới mỗi ngày</h3>
+        <h3 className="h3-heading">New Music every day</h3>
         <Grid container spacing={3}>
           {newSong.map((list) => (
             <Grid item xs={6} sm={3} key={list.id}>
@@ -211,7 +205,7 @@ const Home = () => {
       </div>
 
       <div className="card-list-group">
-        <h3 className="h3-heading">Nghệ sĩ Yêu Thích</h3>
+        <h3 className="h3-heading">Favorite Artist</h3>
 
         <Swiper
           loop
@@ -285,7 +279,7 @@ const Home = () => {
       </div>
 
       <div className="card-list-group">
-        <h3 className="h3-heading">Nhạc Hot tháng</h3>
+        <h3 className="h3-heading">Hot Music of the Month</h3>
         <Grid container spacing={3}>
           {newSong.map((list) => (
             <Grid item xs={6} sm={3} key={list.id}>

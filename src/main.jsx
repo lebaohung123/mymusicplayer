@@ -48,7 +48,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Route index path="mymusicmv" element={<MyMusicMv />} />
             </Route>
             <Route path="/radio" element={<Radio />} />
-            <Route path="/zingchart" element={<Zingchart />} />
+            <Route path="/chart" element={<Zingchart />} />
             <Route path="/follow" element={<Follow />} />
             <Route path="/newmusic" element={<NewMusic />} />
             <Route path="/topmusic" element={<TopMusic />} />

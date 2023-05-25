@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import "./Zingchart.scss";
+import "./Chart.scss";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiOutlineLine } from "react-icons/ai";
 
@@ -7,14 +7,14 @@ import LineChart from "../../components/LineChart";
 import { LayoutContext } from "../../components/Layout";
 import SongItem from "../../components/SongItem";
 
-const Zingchart = () => {
+const Chart = () => {
   const { songs } = useContext(LayoutContext);
 
   return (
-    <div className="zing-chart home">
+    <div className="chart home">
       <div className="align-items-center d-flex">
-        <h3 className="zing-chart-heading">#zingchart</h3>
-        <div className="zing-chart-play-icon">
+        <h3 className="chart-heading">Chart</h3>
+        <div className="chart-play-icon">
           <BsFillPlayFill />
         </div>
       </div>
@@ -22,7 +22,7 @@ const Zingchart = () => {
       <div className="chart">
         <LineChart className="canvas" />
 
-        <div className="zing-chart-playlist">
+        <div className="chart-playlist">
           {songs.map((song, index) => (
             <div
               className="playlist-item d-flex align-items-center"
@@ -43,4 +43,4 @@ const Zingchart = () => {
   );
 };
 
-export default Zingchart;
+export default Chart;

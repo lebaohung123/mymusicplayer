@@ -7,19 +7,13 @@ import { LayoutContext } from "../Layout";
 const themeList = [
   {
     id: 1,
-    name: "Mặc định",
+    name: "Default",
     thumbnail:
-      "https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme/purple.jpg",
-  },
-  {
-    id: 2,
-    name: "Zing Music Awards",
-    thumbnail:
-      "https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme/zma.jpg",
+      "https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme/blue.jpg",
   },
   {
     id: 3,
-    name: "Jack",
+    name: "Theme Jack",
     thumbnail:
       "https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme/jack.jpg",
   },
@@ -44,7 +38,7 @@ const ThemeItem = ({ theme, setIsShowPlayList }) => {
             className="themeItem-apply-btn btn"
             onClick={handleChangeTheme}
           >
-            Áp dụng
+            Apply
           </button>
         </div>
         <div className="themeItem-img">
@@ -66,7 +60,7 @@ const Theme = ({ isShowThemeList, setIsShowPlayList }) => {
     >
       <div className="theme-container" onClick={(e) => e.stopPropagation()}>
         <div className="theme-container-top d-flex align-items-center">
-          <h3>Giao diện</h3>
+          <h3>Theme</h3>
           <div
             className="theme-close-btn"
             onClick={() => setIsShowPlayList(false)}

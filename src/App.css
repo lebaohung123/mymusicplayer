@@ -9,40 +9,30 @@
 }
 
 .wrapper {
-  --sidenavBc: #2a213a;
-  --sidePlayList: #120822;
-  --header: #170f23;
-  --background: #170f23;
-  --primary-color: #7200a1;
-  --primary-background: #432275;
-  --background-color: #432275;
-  --song-hover-color: #2a2139;
+  --sidenavBc: #457b9d;
+  --sidePlayList: #1f3550;
+  --header: #1f3550;
+  --background: #1f3550;
+  --primary-color: #ff3366;
+  --primary-background: #b83d6b;
+  --background-color: #b83d6b;
+  --song-hover-color: #457b9c;
   --background-white: #ffffff1a;
   --text-decs-color: #ffffff80;
   --border-primary: #ffffff1a;
-  --modal: #432275;
+  --modal: #b83d6b;
 }
 
-.zingAwards {
-  --primary-color: #ed2b91;
-  --background-color: #37075d;
-  --sidenavBc: #411465;
-  --sidePlayList: #5d218c;
-  --header: #37075d;
-  --modal: #6a39af;
-  --primary-background: #333550;
-}
-
-.jack {
-  --primary-color: #ac8e77;
-  --background-color: #77736a;
-  --sidenavBc: rgba(255, 255, 255, 0.05);
-  --sidePlayList: #726c5e;
-  --playerControl: #5e5b54;
-  --header: #77736a;
-  --modal: #565147;
-  --primary-background: #565147;
-}
+  .jack {
+  --primary-color: #c5ad95;
+  --background-color: #918f85;
+  --sidenavBc: rgba(255, 255, 255, 0.1);
+  --sidePlayList: #7b776e;
+  --playerControl: #706c65;
+  --header: #918f85;
+  --modal: #7c6e68;
+  --primary-background: #7c6e68;
+  }
 
 html {
   font-family: "Inter", sans-serif;

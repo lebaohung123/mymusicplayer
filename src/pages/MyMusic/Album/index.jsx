@@ -1,6 +1,6 @@
 const Album = () => {
   return (
-    <div className="mymusic-album">Chưa có album trong thư viện cá nhân</div>
+    <div className="mymusic-album">No album in personal library yet</div>
   );
 };
 

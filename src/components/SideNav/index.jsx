@@ -32,70 +32,50 @@ const SideNav = () => {
 
   return (
     <div className={`sideNav ${showNav ? " " : "tablet"}`}>
-      <NavLink to="/" className="logo"></NavLink>
+      <NavLink to="/" className="logo">My Music</NavLink>
       <div className="navigation">
-        <NavLink to="/mymusic" className="navigation-item" title="Cá nhân">
-          <div className="navigation-item-icon">
-            <MdOutlineMusicVideo />
-          </div>
-          <div className="navigation-item-title">Cá nhân</div>
+        <NavLink to="/mymusic" className="navigation-item" title="Individual ">
+          <img src="https://img.icons8.com/?size=512&id=u2YES2H0rze7&format=png" alt="" className="iconImg"/>
+          <span className="navigation-item-title">My Music</span>
         </NavLink>
 
-        <NavLink to="/" className="navigation-item" title="Khám phá">
-          <div className="navigation-item-icon">
-            <SiCircle />
-          </div>
-          <div className="navigation-item-title">Khám phá</div>
+        <NavLink to="/" className="navigation-item" title="Discover">
+          <img src="https://img.icons8.com/?size=512&id=vEhf1Go2f5ed&format=png" alt="" className="iconImg" />
+          <span className="navigation-item-title">Discover</span>
         </NavLink>
         <NavLink
-          to="/zingchart"
+          to="/chart"
           className="navigation-item"
-          title="#zing chart"
+          title="MyMusic chart"
         >
           <div className="navigation-item-icon">
-            <FaChartLine />
+            <img src="https://img.icons8.com/?size=512&id=11890&format=png" alt="" className="iconImg" />
           </div>
-          <div className="navigation-item-title">#zing chart</div>
+          <div className="navigation-item-title">Chart</div>
         </NavLink>
         <NavLink to="/radio" className="navigation-item" title="Radio">
-          <div className="navigation-item-icon">
-            <GiMusicSpell />
-          </div>
+          <img src="https://img.icons8.com/?size=512&id=9LJb35C3K8Gp&format=png" alt="" className="iconImg" />
           <div className="navigation-item-title">Radio</div>
         </NavLink>
-        <NavLink to="/follow" className="navigation-item" title="Theo dõi">
-          <div className="navigation-item-icon">
-            <BiNews />
-          </div>
-          <div className="navigation-item-title">Theo dõi</div>
+        <NavLink to="/follow" className="navigation-item" title="Following">
+          <img src="https://img.icons8.com/?size=512&id=Am8K12nmaCH1&format=png" alt="" className="iconImg" />
+          <div className="navigation-item-title">Following</div>
         </NavLink>
         <div className="side-line">
           <span></span>
         </div>
         <div className="subSideNav">
-          <NavLink to="/newmusic" className="navigation-item" title="Nhạc mới">
-            <div className="navigation-item-icon">
-              <FiMusic />
-            </div>
-            <div className="navigation-item-title">Nhạc mới</div>
+          <NavLink to="/newmusic" className="navigation-item" title="New Music">
+            <img src="https://img.icons8.com/?size=512&id=31151&format=png" alt="" className="iconImg" />
+            <div className="navigation-item-title">New Music</div>
           </NavLink>
-          <NavLink to="/category" className="navigation-item" title="Thể loại">
-            <div className="navigation-item-icon">
-              <BiCategoryAlt />
-            </div>
-            <div className="navigation-item-title">Thể loại</div>
+          <NavLink to="/category" className="navigation-item" title="Category">
+            <img src="https://img.icons8.com/?size=512&id=jdWoHcgiEf4n&format=png" alt="" className="iconImg" />
+            <div className="navigation-item-title">Category</div>
           </NavLink>
           <NavLink to="/topmusic" className="navigation-item" title="Top 100">
-            <div className="navigation-item-icon">
-              <AiOutlineStar />
-            </div>
+            <img src="https://img.icons8.com/?size=512&id=104236&format=png" alt="" className="iconImg" />
             <div className="navigation-item-title">Top 100</div>
-          </NavLink>
-          <NavLink to="/mv" className="navigation-item" title="MV">
-            <div className="navigation-item-icon">
-              <MdOndemandVideo />
-            </div>
-            <div className="navigation-item-title">MV</div>
           </NavLink>
         </div>
       </div>

@@ -89,7 +89,7 @@ const Category = () => {
       </div>
 
       <div className="card-list-group">
-        <h3 className="h3-heading">Nhạc Âu Mỹ</h3>
+        <h3 className="h3-heading">U.S. music</h3>
         <Grid container spacing={3}>
           {top100usuk.map((list) => (
             <Grid item xs={6} sm={3} key={list.id}>

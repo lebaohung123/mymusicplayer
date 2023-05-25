@@ -18,8 +18,8 @@ const SidePlayList = ({ songs, showPlaylist, setShowPlayList }) => {
     <div className={`side-playList ${showPlaylist ? "" : "hide"}`}>
       <div className="side-playList-top">
         <div className="change-playlist">
-          <button className="btn active">Danh sách phát</button>
-          <button className="btn">Nghe gần đây</button>
+          <button className="btn active">Playlists</button>
+          <button className="btn">Listened recently</button>
         </div>
         <div className="side-playList-seemore">
           <BsThreeDots />

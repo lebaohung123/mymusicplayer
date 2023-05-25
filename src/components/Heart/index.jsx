@@ -31,7 +31,7 @@ const Heart = ({ favorite }) => {
       });
       setSongs(newSongs);
       dispatch(removeSong(songs[clickedSongIndex]));
-      toast.success("Đã xóa khỏi thư viện");
+      toast.success("Removed from gallery");
     } else {
       newSongs.splice(clickedSongIndex, 1, {
         ...songs[clickedSongIndex],
@@ -39,12 +39,12 @@ const Heart = ({ favorite }) => {
       });
       setSongs(newSongs);
       dispatch(addSong({ ...songs[clickedSongIndex], favorite: true }));
-      toast.success("Đã thêm vào thư viện");
+      toast.success("Added to the gallery");
     }
   };
   return (
     <>
-      <Tooltip title={favorite ? "Bỏ thích" : "Yêu thích"} placement="top">
+      <Tooltip title={favorite ? "Unlike" : "Like"} placement="top">
         <div
           className="song-info-like icon-button"
           onClick={handleClickLikeSong}
